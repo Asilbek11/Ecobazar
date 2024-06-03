@@ -1,0 +1,106 @@
+.auth-section {
+    padding: 80px 0;
+}
+
+.auth-form {
+    max-width: 520px;
+    padding: 24px 24px 32px;
+    box-sizing: border-box;
+    border: 1px solid var(--gray-50);
+    border-radius: 8px;
+    box-shadow: 0px 0px 56px 0px rgba(0, 38, 3, 0.08);
+    background: var(--white);
+    margin: 0 auto;
+}
+
+.auth-form .form-err{
+    margin-bottom: 15px;
+    color: var(--danger);
+}
+
+.auth-form h2 {
+    color: var(--gray-900);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.auth-form .input-box {
+    height: 46px;
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.auth-form .input-box input {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    padding: 0 16px;
+    box-sizing: border-box;
+    border: 1px solid var(--gray-100);
+    border-radius: 6px;
+    background: var(--white);
+}
+
+.auth-form input::placeholder {
+    color: var(--gray-400);
+}
+
+.auth-form .input-box i{
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    color: var(--gray-900);
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.auth-form .form-text {
+    color: var(--gray-600);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.auth-form .form-text a {
+    color: inherit;
+}
+
+.auth-form .form-text label {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.auth-form button {
+    width: 100%;
+    padding: 14px 0;
+    border-radius: 43px;
+    border: none;
+    background: var(--primary);
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0%;
+    margin-top: 20px;
+    margin-bottom: 24px;
+}
+
+.auth-form .form-text p {
+    flex: 1;
+}
+
+.auth-form .form-text p a{
+    font-weight: 500;
+    color: var(--gray-900);
+}
