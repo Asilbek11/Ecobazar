@@ -2,9 +2,11 @@
 
 :root{
     --primary:#00B307;
+    --light-green: #e3ffe3;
     --hard-green:#2C742F;
     --warning:#FF8A00;
     --danger:#EA4B48;
+    --light-danger: #f4a7a6;
     --white:#FFFFFF;
     --gray-900:#1A1A1A;
     --gray-800:#333333;
