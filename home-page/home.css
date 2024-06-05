@@ -479,3 +479,41 @@
 .new-item .new-info .more-btn:hover{
     color: var(--hard-green);
 }
+
+@media screen and (max-width:1320px) {
+    .ad-box .content h1{
+        font-size: 28px;
+    }
+    .ad-box .content p{
+        font-size: 14px;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+    .ad-box .content span{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .ad-box .content .shop-btn{
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .deals-hero .deal-title span{
+        font-size: 14px;
+    }
+    .deals-hero .deal-title h1{
+        font-size: 28px;
+    }
+    .deals-hero .time-hero{
+        gap: 5px;
+    }
+    .deals-hero .time-hero div{
+        width: 75px;
+        height: 70px;
+    }
+    .deals-hero .time-hero div h1{
+        font-size: 20px;
+    }
+    .deals-hero .time-hero div span{
+        font-size: 12px;
+    }
+}

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="shortcut icon" href="/home-page/img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" href="/home-page/home.css">
     <link rel="stylesheet" href="/fontawesome-free-5.15.4-web/css/all.min.css">
@@ -547,27 +548,14 @@
                     <div class="new-info">
                         <h2>Curabitur porttitor orci eget neque accumsan venenatis.</h2>
                         <span>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.<br/></span>
-                        <a class="more-btn" href="#">Read more &nbsp;<i class="fas fa-arrow-right"></i></a>
+                        <a class="more-btn" href="#">Read more &nbsp;<i class="fas faaaannm-arrow-right"></i></a>
                     </div>
                 </div>  
             </div>
         </div>
     </section>
-
-    <script>
-        let btns = document.querySelectorAll('.tab-btn');
-        let items_group = document.querySelectorAll('.items-group');
-        let line = document.querySelector('.line')
-        btns.forEach((btn, i) => {
-            btn.addEventListener('click', (e) => {
-                btns.forEach(button => { button.classList.remove('active') })
-                btn.classList.add('active');
-
-                items_group.forEach(item => { item.classList.remove('active') })
-                items_group[i].classList.add('active');
-            })
-        })
-    </script>
+    
+    <script src="home-page/home.js"></script>
 </body>
 
 </html>
