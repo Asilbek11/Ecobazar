@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+.content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+}
+
+/* ----------------------------manosiz-------------------------- */
+
+.manosiz{
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+    top: 160px;
+    left: 130px;    
+}
+.h2 {
+  font-size: 45px;
+}
+.accordion {
+  position: relative;
+  width: 60%;
+  height: 60%;
+  display: block;
+}
+.accordion-item {
+  background-color: #fff;
+  color: #111;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+}
+.accordion-item.active , .accordion-item-body-content{
+    border: 1px solid #00ff00;
+    color: rgb(0, 255, 0);
+    min-height: 3.5rem;
+    line-height: 1.25rem;
+}
+.accordion-item-header {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.accordion-item-header::after {
+  content: "\002B";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+}
+.accordion-item-header.active::after {
+  content: "\2212";
+
+}
+.accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.5rem;
+  border-top: 1px solid;
+  border: 1px solid rgb(0, 255, 0);
+}
+
+@media(max-width:767px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/* -------------------------------manoli----------------------------- */
+
+.manoli{
+    width: 50%;
+    height: 80%;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 60px;
+}
+.img-div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+img{
+    width: 80%;
+    height: 100%;
+}

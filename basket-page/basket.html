@@ -1,12 +1,443 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basket</title>
+    <title>Ecobazar</title>
+    <link rel="stylesheet" href="basket.css">
+    <link rel="shortcut icon" href="/home-page/img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="/home-page/home.css">
+    <link rel="stylesheet" href="/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <h1>niag</h1>
+    <section class="wrapper">
+        <div class="container">
+            <div class="container-product">
+                <div class="product-img">
+                    <div class="carousel-box">
+                        <i class="fa-solid fa-chevron-up" id="up"></i>
+                        <ul class="image-lists">
+                            <li><img class="lists-img active" src="img/ProductImage0.png" alt="img"></li>
+                            <li><img class="lists-img" src="img/ProductImage1.svg" alt="img"></li>
+                            <li><img class="lists-img" src="img/ProductImage2.svg" alt="img"></li>
+                            <li><img class="lists-img" src="img/ProductImage3.svg" alt="img"></li>
+                        </ul>
+                        <i class="fa-solid fa-chevron-down" id="down"></i>
+                    </div>
+                    <div class="img-box">
+                        <img src="img/ProductImage0.png" alt="img">
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="item-info">
+                        <div class="item-name">
+                            <h2 class="item-title">Chinese Cabbage</h2>
+                            <span class="has">In Stock</span>
+                        </div>
+                        <div class="review">
+                            <img src="img/Vector.png" alt="img">
+                            <img src="img/Vector.png" alt="img">
+                            <img src="img/Vector.png" alt="img">
+                            <img src="img/Vector.png" alt="img">
+                            <img src="img/Vector.png" alt="img">
+                            <p>4 Review</p>
+                            <span class="circle"></span>
+                            <strong>SKU: </strong>
+                            <p>2,51,594</p>
+                        </div>
+                        <div class="price-info">
+                            <del class="old-price">$48.00</del>
+                            <strong class="new-price">$17.28</strong>
+                            <span class="hasnot">64% Off</span>
+                        </div>
+                    </div>
+                    <div class="about-item-company">
+                        <div class="brand">
+                            <div class="brand-item">
+                                <p>Brand: </p>
+                                <div class="logo-box">
+                                    <img src="img/Group19.png" alt="logo">
+                                </div>
+                            </div>
+                            <div class="brand-info">
+                                <p>Share item: </p>
+                                <span class="icons"><i class="fa-brands fa-facebook-f"></i></span>
+                                <span class="icons"><i class="fa-brands fa-twitter"></i></span>
+                                <span class="icons"><i class="fa-brands fa-pinterest-p"></i></span>
+                                <span class="icons"><i class="fa-brands fa-instagram"></i></span>
+                            </div>
+                        </div>
+                        <div class="about-item-text">
+                            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                Nulla nibh diam, blandit vel consequat nec, ultrices et ipsum. Nulla varius magna a
+                                consequat pulvinar.</p>
+                        </div>
+                    </div>
+                    <form action="#" method="post" id="add-cart">
+                        <div class="count">
+                            <button type="button" class="minus"><i class="fa-solid fa-minus"></i></button>
+                            <input type="number" name="item-count" class="counter" readonly value="1">
+                            <button class="plus" type="button"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <button type="submit" class="add-btn">Add to Cart <i class="fa-solid fa-bag-shopping"></i></button>
+                        <span class="like-icon"><i id="heart-icon" class="fa-regular fa-heart"></i></span>
+                    </form>
+                    <div class="product-information">
+                        <div class="category-info">
+                            <strong>Category:</strong>
+                            <span class="info-value">Vegetables</span>
+                        </div>
+                        <div class="tag-info">
+                            <strong>Tag:</strong>
+                            <span class="info-value">Vegetables Healthy <a href="#">Chinese</a> Cabbage Green Cabbage</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gave-info">
+                <div class="chose-info-box">
+                    <p class="chose-info-text active">Descriptions</p>
+                    <p class="chose-info-text">Additial Information</p>
+                    <p class="chose-info-text">Customer Feedback</p>
+                </div>
+                <div class="description-box">
+                    <div class="product-lists active">
+                        <div class="description-wrapper">
+                            <div class="description-texts">
+                                <p class="description-paragraph">Sed commodo aliquam dui ac porta. Fusce ipsum felis,
+                                    imperdiet at posuere ac, viverra at mauris. Maecenas tincidunt ligula a sem vestibulum
+                                    pharetra. Maecenas auctor tortor lacus, nec laoreet nisi porttitor vel. Etiam tincidunt
+                                    metus vel dui interdum sollicitudin. Mauris sem ante, vestibulum nec orci vitae, aliquam
+                                    mollis lacus. Sed et condimentum arcu, id molestie tellus. Nulla facilisi. Nam
+                                    scelerisque vitae justo a convallis. Morbi urna ipsum, placerat quis commodo quis,
+                                    egestas elementum leo. Donec convallis mollis enim. Aliquam id mi quam. Phasellus nec
+                                    fringilla elit.</p>
+                                <p>Nulla mauris tellus, feugiat quis pharetra sed, gravida ac dui. Sed iaculis, metus
+                                    faucibus elementum tincidunt, turpis mi viverra velit, pellentesque tristique neque mi
+                                    eget nulla. Proin luctus elementum neque et pharetra.</p>
+                            </div>
+                            <div class="departed-box">
+                                <div class="departed-child">
+                                    <span class="parent-check">
+                                        <i class="fa-solid fa-check"></i>
+                                    </span>
+                                    <span>100 g of fresh leaves provides.</span>
+                                </div>
+                                <div class="departed-child">
+                                    <span class="parent-check">
+                                        <i class="fa-solid fa-check"></i>
+                                    </span>
+                                    <span>Aliquam ac est at augue volutpat elementum.</span>
+                                </div>
+                                <div class="departed-child">
+                                    <span class="parent-check">
+                                        <i class="fa-solid fa-check"></i>
+                                    </span>
+                                    <span>Quisque nec enim eget sapien molestie.</span>
+                                </div>
+                                <div class="departed-child">
+                                    <span class="parent-check">
+                                        <i class="fa-solid fa-check"></i>
+                                    </span>
+                                    <span>Proin convallis odio volutpat finibus posuere.</span>
+                                </div>
+                            </div>
+                            <div class="something">
+                                <p>Cras et diam maximus, accumsan sapien et, sollicitudin velit. Nulla blandit eros non
+                                    turpis lobortis iaculis at ut massa. </p>
+                            </div>
+                        </div>
+    
+                        <div class="info-delivery">
+                            <div class="delivery-img">
+                                <img src="./img/Image.jpeg" alt="img">
+                            </div>
+                            <div class="statictic-delivery">
+                                <img src="./img/Delivery.png" alt="img">
+                                <div class="about-delivery">
+                                    <p>64% Discount</p>
+                                    <small>Save your 64% money with us</small>
+                                </div>
+                                <img src="./img/Delivery1.png" alt="img">
+                                <div class="about-delivery">
+                                    <p>100% Organic</p>
+                                    <small>100% Organic Vegetables</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="product-lists">
+                        <div class="item-types">
+                            <div class="item-keys">
+                                <p class="product-keys">Weight:</p>
+                                <p class="product-keys">Color:</p>
+                                <p class="product-keys">Type:</p>
+                                <p class="product-keys">Category:</p>
+                                <p class="product-keys">Stock Status:</p>
+                                <p class="product-keys">Tags:</p>
+                            </div>
+                            <div class="item-values">
+                                <p class="product-values">03</p>
+                                <p class="product-values">Green</p>
+                                <p class="product-values">Organic</p>
+                                <p class="product-values">Vegetables</p>
+                                <p class="product-values">Avialable (5,413)</p>
+                                <p class="product-values">Vegetables, Healthy, <a href="$">Chinese,</a> Cabbage, Green
+                                    Cabbage,</p>
+                            </div>
+                        </div>
+    
+                        <div class="info-delivery">
+                            <div class="delivery-img">
+                                <img src="./img/Image.jpeg" alt="img">
+                            </div>
+                            <div class="statictic-delivery">
+                                <img src="./img/Delivery.png" alt="img">
+                                <div class="about-delivery">
+                                    <p>64% Discount</p>
+                                    <small>Save your 64% money with us</small>
+                                </div>
+                                <img src="./img/Delivery1.png" alt="img">
+                                <div class="about-delivery">
+                                    <p>100% Organic</p>
+                                    <small>100% Organic Vegetables</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="product-lists">
+                        <div class="comments">
+                            <div class="product-comment">
+                                <div class="commenter">
+                                    <div class="info-user">
+                                        <div class="user-img-box">
+                                            <img src="./img/Image.svg" alt="img">
+                                        </div>
+                                        <div class="grade">
+                                            <p class="username">Kristin Watson</p>
+                                            <img class="stars" src="./img/Vector.png" alt="img">
+                                            <img class="stars" src="./img/Vector.png" alt="img">
+                                            <img class="stars" src="./img/Vector.png" alt="img">
+                                            <img class="stars" src="./img/Vector.png" alt="img">
+                                            <img class="stars" src="./img/Vector2.png" alt="img">
+                                        </div>
+                                    </div>
+                                    <p class="added-time">2min ago</p>
+                                </div>
+                                <p class="user-idea">Duis at ullamcorper nulla, eu dictum eros.</p>
+                            </div>
+                            <div class="product-comment">
+                                <div class="commenter">
+                                    <div class="info-user">
+                                        <div class="user-img-box">
+                                            <i class="fa-solid fa-user"></i>
+                                        </div>
+                                        <div class="grade">
+                                            <p class="username">Jame Copler</p>
+                                            <img class="stars" src="./img/Vector.png" alt="img">
+                                            <img class="stars" src="./img/Vector.png" alt="img">
+                                            <img class="stars" src="./img/Vector.png" alt="img">
+                                            <img class="stars" src="./img/Vector.png" alt="img">
+                                            <img class="stars" src="./img/Vector.png" alt="img">
+                                        </div>
+                                    </div>
+                                    <p class="added-time">30 Apr, 2022</p>
+                                </div>
+                                <p class="user-idea">Keep the soil evenly moist for the healthiest growth. If the sun gets
+                                    too hot, Chinese cabbage tends to "bolt" or go to seed; in long periods of heat, some
+                                    kind of shade may be helpful. Watch out for snails, as they will harm the plants.</p>
+                            </div>
+                            <div class="product-comment">
+                                <div class="commenter">
+                                    <div class="info-user">
+                                        <div class="user-img-box">
+                                            <img src="./img/Image1.svg" alt="img">
+                                        </div>
+                                        <div class="grade">
+                                            <p class="username">Jacob Jones</p>
+                                            <img class="stars" src="./img/Vector.png" alt="img">
+                                            <img class="stars" src="./img/Vector.png" alt="img">
+                                            <img class="stars" src="./img/Vector.png" alt="img">
+                                            <img class="stars" src="./img/Vector.png" alt="img">
+                                            <img class="stars" src="./img/Vector.png" alt="img">
+                                        </div>
+                                    </div>
+                                    <p class="added-time">12min ago</p>
+                                </div>
+                                <p class="user-idea"> Vivamus eget euismod magna. Nam sed lacinia nibh, et lacinia lacus.
+                                </p>
+                            </div>
+                            <div class="product-comment">
+                                <div class="commenter">
+                                    <div class="info-user">
+                                        <div class="user-img-box">
+                                            <img src="./img/Image2.svg" alt="img">
+                                        </div>
+                                        <div class="grade">
+                                            <p class="username">Ralph Ewards</p>
+                                            <img class="stars" src="./img/Vector.png" alt="img">
+                                            <img class="stars" src="./img/Vector.png" alt="img">
+                                            <img class="stars" src="./img/Vector.png" alt="img">
+                                            <img class="stars" src="./img/Vector2.png" alt="img">
+                                            <img class="stars" src="./img/Vector2.png" alt="img">
+                                        </div>
+                                    </div>
+                                    <p class="added-time">5hour ago</p>
+                                </div>
+                                <p class="user-idea">200+ Canton Pak Choi Bok Choy Chinese Cabbage Seeds Heirloom Non-GMO
+                                    Productive Brassica rapa VAR. chinensis, a.k.a. Canton's Choice, Bok Choi, from USA</p>
+                            </div>
+                            <button type="button" class="load-more">Load More</button>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="feature-product">
+        <div class="container">
+            <h1 class="title feat-title">Featured products</h1>
+            <div class="feature-group">
+                <div class="item">
+                    <div class="item-img">
+                        <div class="item-nav">
+                            <button class="like-btn"><i class="far fa-heart"></i></button>
+                            <button class="eye-btn"><i class="far fa-eye"></i></button>
+                        </div>
+                        <img src="../home-page/img/Image.png" alt="">
+                    </div>
+                    <div class="item-info">
+                        <div class="item-description">
+                            <span class="item-name">Green apple</span>
+                            <p class="price">$14.99 <span>$20.99</span></p>
+                            <span>
+                                <i class="fas fa-star colored"></i>
+                                <i class="fas fa-star colored"></i>
+                                <i class="fas fa-star colored"></i>
+                                <i class="fas fa-star colored"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <button class="basket-btn"><i class="fas fa-shopping-basket"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-img">
+                        <div class="item-nav">
+                            <button class="like-btn"><i class="far fa-heart"></i></button>
+                            <button class="eye-btn"><i class="far fa-eye"></i></button>
+                        </div>
+                        <img src="../home-page/img/Image.png" alt="">
+                    </div>
+                    <div class="item-info">
+                        <div class="item-description">
+                            <span class="item-name">Green apple</span>
+                            <p class="price">$14.99 <span>$20.99</span></p>
+                            <span>
+                                <i class="fas fa-star colored"></i>
+                                <i class="fas fa-star colored"></i>
+                                <i class="fas fa-star colored"></i>
+                                <i class="fas fa-star colored"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <button class="basket-btn"><i class="fas fa-shopping-basket"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-img">
+                        <div class="item-nav">
+                            <button class="like-btn"><i class="far fa-heart"></i></button>
+                            <button class="eye-btn"><i class="far fa-eye"></i></button>
+                        </div>
+                        <img src="../home-page/img/Image.png" alt="">
+                    </div>
+                    <div class="item-info">
+                        <div class="item-description">
+                            <span class="item-name">Green apple</span>
+                            <p class="price">$14.99 <span>$20.99</span></p>
+                            <span>
+                                <i class="fas fa-star colored"></i>
+                                <i class="fas fa-star colored"></i>
+                                <i class="fas fa-star colored"></i>
+                                <i class="fas fa-star colored"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <button class="basket-btn"><i class="fas fa-shopping-basket"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-img">
+                        <div class="item-nav">
+                            <button class="like-btn"><i class="far fa-heart"></i></button>
+                            <button class="eye-btn"><i class="far fa-eye"></i></button>
+                        </div>
+                        <img src="../home-page/img/Image.png" alt="">
+                    </div>
+                    <div class="item-info">
+                        <div class="item-description">
+                            <span class="item-name">Green apple</span>
+                            <p class="price">$14.99 <span>$20.99</span></p>
+                            <span>
+                                <i class="fas fa-star colored"></i>
+                                <i class="fas fa-star colored"></i>
+                                <i class="fas fa-star colored"></i>
+                                <i class="fas fa-star colored"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <button class="basket-btn"><i class="fas fa-shopping-basket"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-img">
+                        <div class="item-nav">
+                            <button class="like-btn"><i class="far fa-heart"></i></button>
+                            <button class="eye-btn"><i class="far fa-eye"></i></button>
+                        </div>
+                        <img src="../home-page/img/Image.png" alt="">
+                    </div>
+                    <div class="item-info">
+                        <div class="item-description">
+                            <span class="item-name">Green apple</span>
+                            <p class="price">$14.99 <span>$20.99</span></p>
+                            <span>
+                                <i class="fas fa-star colored"></i>
+                                <i class="fas fa-star colored"></i>
+                                <i class="fas fa-star colored"></i>
+                                <i class="fas fa-star colored"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <button class="basket-btn"><i class="fas fa-shopping-basket"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="basket.js"></script>
 </body>
+
 </html>
