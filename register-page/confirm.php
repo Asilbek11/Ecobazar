@@ -58,7 +58,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tasdiqlash</title>
   <link rel="shortcut icon" href="/home-page/img/logo.png" type="image/x-icon">
-  <link rel="stylesheet" href="../fontawesome-free-6.5.1-web/css/all.min.css" />
+  <link rel="stylesheet" href="../fontawesome-free-6.5.2-web/css/all.min.css">
   <link rel="stylesheet" href="../main.css">
   <link rel="stylesheet" href="../login-page/login.css">
 </head>
