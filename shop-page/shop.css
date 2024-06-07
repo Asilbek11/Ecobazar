@@ -1,0 +1,78 @@
+.shopping-wrapper{
+    display: flex;
+}
+
+.shopping-wrapper .shopping-list{
+    width: 800px;
+    background-color: red;
+}
+
+.shopping-wrapper .shopping-list .shopping-info{
+    width: 100%;
+    background-color: aqua;
+}
+
+.shopping-info table{
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+}
+
+.shopping-info table thead{
+    color: var(--gray-500);
+}
+
+.shopping-info table th,td{
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid var(--gray-200);
+}
+
+table #shopping-product{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+table .delete-circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border: 1px solid var(--gray-400);
+    border-radius: 50%;
+    color: var(--gray-700);
+}
+
+.count {
+    display: flex;
+    align-items: center;
+    width: 130px;
+    height: 42px;
+    border-radius: 80px;
+    border: 2px solid var(--gray-200);
+    padding: 0 10px;
+}
+
+.count .counter {
+    position: relative;
+    left: 5px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    text-align: center;
+    font-size: 18px;
+}
+
+.count button{
+    border: none;
+    outline: none;
+    width: 30px;
+    height: 30px;
+    background-color: var(--gray-200);
+    border-radius: 50%;
+    flex-shrink: 0;
+    cursor: pointer;
+}

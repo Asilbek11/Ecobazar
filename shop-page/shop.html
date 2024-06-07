@@ -5,12 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop</title>
     <link rel="stylesheet" href="../main.css">
+    <link rel="shortcut icon" href="/home-page/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="shop.css">
+    <!-- <link rel="stylesheet" href="../main.css"> -->
+    <link rel="stylesheet" href="/home-page/home.css">
+    <link rel="stylesheet" href="/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <section class="shopping">
-        <div class="shopping-wrapper">
-            <div class="shopping-list">
-                
+        <div class="container">
+            <h2>My Shopping Cart</h2>
+            <div class="shopping-wrapper">
+                <div class="shopping-list">
+                    <div class="shopping-info">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>PRODUCT</th>
+                                    <th>PRICE</th>
+                                    <th>QUANTITY</th>
+                                    <th>SUBTOTAL</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="shopping-product">
+                                        <img src="../basket-page/img/ProductImage3.svg" alt="img">
+                                        <span>Green Apple</span>
+                                    </td>
+                                    <td>
+                                        <p>$14.00</p>
+                                    </td>
+                                    <td>
+                                        <div class="count">
+                                            <button type="button" class="minus"><i class="fa-solid fa-minus"></i></button>
+                                            <input type="number" name="item-count" class="counter" readonly value="1">
+                                            <button class="plus" type="button"><i class="fa-solid fa-plus"></i></button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <b>$70.00</b>
+                                    </td>
+                                    <td>
+                                        <span class="delete-circle"><i class="fa-solid fa-xmark"></i></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="shopping-product">
+                                        <img src="../basket-page/img/ProductImage3.svg" alt="img">
+                                        <span>Green Apple</span>
+                                    </td>
+                                    <td>
+                                        <p>$14.00</p>
+                                    </td>
+                                    <td>
+                                        <div class="count">
+                                            <button type="button" class="minus"><i class="fa-solid fa-minus"></i></button>
+                                            <input type="number" name="item-count" class="counter" readonly value="1">
+                                            <button class="plus" type="button"><i class="fa-solid fa-plus"></i></button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <b>$70.00</b>
+                                    </td>
+                                    <td>
+                                        <span class="delete-circle"><i class="fa-solid fa-xmark"></i></span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="button-box">
+
+                    </div>
+                </div>
+
+                <div class="coupon">
+
+                </div>
+
+                <div class="procesed">
+
+                </div>
             </div>
         </div>
     </section>
