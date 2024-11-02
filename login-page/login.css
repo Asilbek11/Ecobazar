@@ -58,6 +58,14 @@
     cursor: pointer;
 }
 
+.auth-form .input-box i.fa-eye-slash{
+    color: var(--gray-400);
+}
+
+.auth-form .input-box i.fa-eye{
+    color: var(--gray-900);
+}
+
 .auth-form .form-text {
     color: var(--gray-600);
     font-size: 14px;
@@ -73,6 +81,10 @@
 
 .auth-form .form-text a {
     color: inherit;
+    text-decoration: underline;
+}
+.auth-form .form-text a:hover{
+    color: var(--blue);
 }
 
 .auth-form .form-text label {
