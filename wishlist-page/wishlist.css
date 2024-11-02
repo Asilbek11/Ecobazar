@@ -1,0 +1,25 @@
+.wishlist-wrapper{
+    position: relative;
+    width: 100%;
+    border: 1px solid;
+    text-align: left;
+}
+.wishlist-wrapper thead{
+    border-collapse: collapse;
+    border-bottom: 1px solid;
+}
+.wishlist-wrapper tbody{
+    padding:0 15px;
+}
+.wishlist-wrapper td{
+    border-bottom: 1px solid;
+}
+.wishlist-wrapper .td-img{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-transform: capitalize;
+}
+.wishlist-wrapper p{
+    font-size: 18px;
+}
